@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from './assets/styles/global-styles';
-import { theme } from './assets/styles/theme';
+import { GlobalStyle } from './styles/global-styles';
+import { theme } from './styles/theme';
 import Awards from './common/components/Awards';
 import ContentLogo from './common/components/ContentLogo';
 import Metrics from './common/components/Metrics';
