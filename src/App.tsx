@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './assets/styles/global-styles';
+import { theme } from './assets/styles/theme';
+import Awards from './common/components/Awards';
+import ContentLogo from './common/components/ContentLogo';
+import Metrics from './common/components/Metrics';
+
+const SectionContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  background-origin: inherit;
+  background-clip: inherit;
+  background-color: inherit;
+  background-size: cover;
+  background-position: center center;
+  min-width: 1200px;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <body>
+          <SectionContainer>
+            <ContentLogo />
+            <Metrics />
+            <Awards />
+          </SectionContainer>
+        </body>
+      </ThemeProvider>
+    </>
   );
 }
 
