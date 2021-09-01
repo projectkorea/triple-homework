@@ -1,28 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
+import CountUp from 'react-countup';
+import useVisible from '../hooks/useVisible';
+import { AnimationProp } from '../../types/animationType';
+import { easeOutExpo } from '../../styles/animation';
+
+const MetricsContainer = styled.div<AnimationProp>`
+  margin-left: 623px;
+  padding-top: 150px;
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transform: translateY(${(props) => (props.isVisible ? '0px' : '10px')});
+  transition: all 700ms ease-in-out 100ms;
+`;
+const MetricItem = styled.div`
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: ${(props) => props.theme.colors['--color-gray']};
+`;
 
 function Metrics() {
-  const Container = styled.div``;
-  const MetricItem = styled.div`
-    font-size: 36px;
-    letter-spacing: -1px;
-    margin-bottom: 20px;
-    color: ${(props) => props.theme.colors['--color-gray']};
-  `;
-
+  const isVisible = useVisible();
   return (
     <>
-      <Container>
+      <MetricsContainer isVisible={isVisible}>
         <MetricItem>
-          <strong>630만 명</strong>의 여행자
+          <strong>
+            <CountUp end={635} duration={2} useEasing easingFn={easeOutExpo} />만 명
+          </strong>
+          의 여행자
         </MetricItem>
         <MetricItem>
-          <strong>95만 개</strong>의 여행 리뷰
+          <strong>
+            <CountUp end={95} duration={2} useEasing easingFn={easeOutExpo} />만 개
+          </strong>
+          의 여행 리뷰
         </MetricItem>
         <MetricItem>
-          <strong>425만 개</strong>의 여행 일정
+          <strong>
+            <CountUp end={425} duration={2} useEasing easingFn={easeOutExpo} />만 개
+          </strong>
+          의 여행 일정
         </MetricItem>
-      </Container>
+      </MetricsContainer>
     </>
   );
 }

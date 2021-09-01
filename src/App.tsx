@@ -20,18 +20,25 @@ const SectionContainer = styled.div`
   min-width: 1200px;
 `;
 
+const ResponsiveSection = styled.div`
+  width: 1040px;
+  height: auto;
+  margin: 100px auto;
+  position: relative;
+`;
+
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <body>
-          <SectionContainer>
+        <SectionContainer>
+          <ResponsiveSection>
             <ContentLogo />
             <Metrics />
             <Awards />
-          </SectionContainer>
-        </body>
+          </ResponsiveSection>
+        </SectionContainer>
       </ThemeProvider>
     </>
   );

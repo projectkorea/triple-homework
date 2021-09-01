@@ -9,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
+    'no-param-reassign': 0,
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
