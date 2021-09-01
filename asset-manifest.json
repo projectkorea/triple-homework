@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/triple-homework/static/js/main.0bd6e66b.chunk.js",
+    "main.js.map": "/triple-homework/static/js/main.0bd6e66b.chunk.js.map",
+    "runtime-main.js": "/triple-homework/static/js/runtime-main.acb55b8e.js",
+    "runtime-main.js.map": "/triple-homework/static/js/runtime-main.acb55b8e.js.map",
+    "static/js/2.2b95afee.chunk.js": "/triple-homework/static/js/2.2b95afee.chunk.js",
+    "static/js/2.2b95afee.chunk.js.map": "/triple-homework/static/js/2.2b95afee.chunk.js.map",
+    "static/js/3.faa64d66.chunk.js": "/triple-homework/static/js/3.faa64d66.chunk.js",
+    "static/js/3.faa64d66.chunk.js.map": "/triple-homework/static/js/3.faa64d66.chunk.js.map",
+    "index.html": "/triple-homework/index.html",
+    "static/js/2.2b95afee.chunk.js.LICENSE.txt": "/triple-homework/static/js/2.2b95afee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acb55b8e.js",
+    "static/js/2.2b95afee.chunk.js",
+    "static/js/main.0bd6e66b.chunk.js"
+  ]
+}
