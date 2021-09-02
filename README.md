@@ -20,12 +20,12 @@
 
 ## **프로젝트 중점사항**
 
-1) 컴포넌트 설계 및 상태관리
+**1) 컴포넌트 설계 및 상태관리**
    * Styled-Components를 사용하여 기능별 재사용 가능한 컴포넌트 설계  
    * Styled-components의 DefaultTheme을 사용하여 스타일 코드 구분 설계
    * 애니메이션 시작 시간을 Custom hook, useVisible을 통해 통합 관리
 
-2) 일관성있는 코드  
+**2) 일관성있는 코드**
     * typescript 사용으로 보다 데이터 타입을 명확히 구분  
        * React.FC: children prop, defaultProps를 이용하지 않기 때문에, 사용하지 않음으로써 코드 가독성 향상  
     * import시 폴더 구조를 명확하게 하기 위해 ./표기법 대신 폴더 이름 직접 사용  
@@ -39,7 +39,7 @@
     * eslint, prettier을 사용하여 표준화된 코드 스타일 준수
 
 
-3) 화면과 동일한 애니메이션 구현
+**3) 화면과 동일한 애니메이션 구현**
    * https://easings.net 사이트에서 해당 Easing Fn 찾기
    * 마지막에 극단적으로 속도가 낮아지는 [easing Exop]함수 발견
    * 해당 함수를 Countup 라이브러리 입력 attribute 형식에 맞춰 입력 후 animation.ts에 저장&사용
