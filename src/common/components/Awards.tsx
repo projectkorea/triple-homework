@@ -27,10 +27,10 @@ const AwardItem = styled.div`
 `;
 
 const PlayStore = styled(AwardItem)`
-  background-image: url(./triple-homework/assets/images/play-store@2x.png);
+  background-image: url(./assets/images/play-store@2x.png);
 `;
 const AppStore = styled(AwardItem)`
-  background-image: url(./triple-homework/assets/images/app-store@2x.png);
+  background-image: url(./assets/images/app-store@2x.png);
 `;
 
 function Awards() {

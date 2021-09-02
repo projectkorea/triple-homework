@@ -11,7 +11,7 @@ const LogoContainer = styled.div<AnimationProp>`
   background-size: 400px 338px;
   padding-top: 280px;
   font-size: 15px;
-  background-image: url(./triple-homework/assets/images/triple@2x.png);
+  background-image: url(./assets/images/triple@2x.png);
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;
