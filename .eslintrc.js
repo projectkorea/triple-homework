@@ -15,6 +15,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'prettier/prettier': 0,
     'import/extensions': 0,
+    'import/order': 0,
     'no-use-before-define': 0,
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,

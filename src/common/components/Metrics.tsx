@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import CountUp from 'react-countup';
-import useVisible from '../hooks/useVisible';
-import { AnimationProp } from '../../types/animationType';
-import { easeOutExpo } from '../../styles/animation';
+import useVisible from 'common/hooks/useVisible';
+import { AnimationProp } from 'types/animationType';
+import { easeOutExpo } from 'styles/animation';
 
 const MetricsContainer = styled.div<AnimationProp>`
   margin-left: 623px;

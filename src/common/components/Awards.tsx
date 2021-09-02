@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import useVisible from '../hooks/useVisible';
-import { AnimationProp } from '../../types/animationType';
+import useVisible from 'common/hooks/useVisible';
+import { AnimationProp } from 'types/animationType';
 
 const AwardContainer = styled.div<AnimationProp>`
   margin: 50px 0px 140px 623px;
@@ -27,10 +27,10 @@ const AwardItem = styled.div`
 `;
 
 const PlayStore = styled(AwardItem)`
-  background-image: url(./assets/images/play-store@2x.png);
+  background-image: url(./triple-homework/assets/images/play-store@2x.png);
 `;
 const AppStore = styled(AwardItem)`
-  background-image: url(./assets/images/app-store@2x.png);
+  background-image: url(./triple-homework/assets/images/app-store@2x.png);
 `;
 
 function Awards() {
